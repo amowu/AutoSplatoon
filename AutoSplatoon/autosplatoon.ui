@@ -34,8 +34,8 @@
     </property>
     <property name="font">
      <font>
-      <family>微软雅黑</family>
-      <pointsize>8</pointsize>
+      <family>PingFang TC</family>
+      <pointsize>11</pointsize>
       <weight>50</weight>
       <bold>false</bold>
      </font>
@@ -49,14 +49,14 @@
           <widget class="QPushButton" name="serialConnectButton">
            <property name="font">
             <font>
-             <family>微软雅黑</family>
-             <pointsize>8</pointsize>
              <weight>50</weight>
+             <family>PingFang TC</family>
+             <pointsize>11</pointsize>
              <bold>false</bold>
             </font>
            </property>
            <property name="text">
-            <string>连接</string>
+            <string>連接</string>
            </property>
           </widget>
          </item>
@@ -64,9 +64,9 @@
           <widget class="QPushButton" name="serialRefreshButton">
            <property name="font">
             <font>
-             <family>微软雅黑</family>
-             <pointsize>8</pointsize>
              <weight>50</weight>
+             <family>PingFang TC</family>
+             <pointsize>11</pointsize>
              <bold>false</bold>
             </font>
            </property>
@@ -83,14 +83,14 @@
           <widget class="QLabel" name="label_3">
            <property name="font">
             <font>
-             <family>微软雅黑</family>
-             <pointsize>8</pointsize>
              <weight>50</weight>
+             <family>PingFang TC</family>
+             <pointsize>11</pointsize>
              <bold>false</bold>
             </font>
            </property>
            <property name="text">
-            <string>串口状态：</string>
+            <string>串口狀態：</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -101,14 +101,14 @@
           <widget class="QLabel" name="serialStatusLabel">
            <property name="font">
             <font>
-             <family>微软雅黑</family>
-             <pointsize>8</pointsize>
              <weight>50</weight>
+             <family>PingFang TC</family>
+             <pointsize>11</pointsize>
              <bold>false</bold>
             </font>
            </property>
            <property name="text">
-            <string>断连</string>
+            <string>斷連</string>
            </property>
            <property name="alignment">
             <set>Qt::AlignCenter</set>
@@ -121,8 +121,8 @@
         <widget class="QComboBox" name="serialPortsBox">
          <property name="font">
           <font>
-           <family>微软雅黑</family>
-           <pointsize>8</pointsize>
+           <family>PingFang TC</family>
+           <pointsize>11</pointsize>
            <weight>50</weight>
            <bold>false</bold>
           </font>
@@ -141,14 +141,14 @@
            </property>
            <property name="font">
             <font>
-             <family>微软雅黑</family>
-             <pointsize>8</pointsize>
              <weight>50</weight>
+             <family>PingFang TC</family>
+             <pointsize>11</pointsize>
              <bold>false</bold>
             </font>
            </property>
            <property name="text">
-            <string>烧录</string>
+            <string>燒錄</string>
            </property>
           </widget>
          </item>
@@ -156,14 +156,14 @@
           <widget class="QPushButton" name="manualButton">
            <property name="font">
             <font>
-             <family>微软雅黑</family>
-             <pointsize>8</pointsize>
              <weight>50</weight>
+             <family>PingFang TC</family>
+             <pointsize>11</pointsize>
              <bold>false</bold>
             </font>
            </property>
            <property name="text">
-            <string>手动控制</string>
+            <string>手動控制</string>
            </property>
           </widget>
          </item>
@@ -190,8 +190,8 @@
        </property>
        <property name="font">
         <font>
-         <family>微软雅黑</family>
-         <pointsize>8</pointsize>
+         <family>PingFang TC</family>
+         <pointsize>11</pointsize>
          <weight>50</weight>
          <bold>false</bold>
         </font>
@@ -206,7 +206,7 @@
           <bool>false</bool>
          </property>
          <property name="text">
-          <string>模拟按键操作时间间隔（ms）</string>
+          <string>模擬按鍵操作時間間隔（ms）</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -239,7 +239,7 @@
           <bool>false</bool>
          </property>
          <property name="text">
-          <string>开始行数</string>
+          <string>開始行數</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -268,7 +268,7 @@
           <bool>false</bool>
          </property>
          <property name="text">
-          <string>开始列数</string>
+          <string>開始列數</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignCenter</set>
@@ -302,14 +302,14 @@
          </property>
          <property name="font">
           <font>
-           <family>微软雅黑</family>
-           <pointsize>8</pointsize>
            <weight>50</weight>
+           <family>PingFang TC</family>
+           <pointsize>11</pointsize>
            <bold>false</bold>
           </font>
          </property>
          <property name="text">
-          <string>上传BMP</string>
+          <string>上傳BMP</string>
          </property>
         </widget>
        </item>
@@ -320,14 +320,13 @@
          </property>
          <property name="font">
           <font>
-           <family>微软雅黑</family>
-           <pointsize>8</pointsize>
-           <weight>50</weight>
+           <family>PingFang TC</family>
+           <pointsize>11</pointsize>
            <bold>false</bold>
           </font>
          </property>
          <property name="text">
-          <string>开始</string>
+          <string>開始</string>
          </property>
         </widget>
        </item>
@@ -338,14 +337,13 @@
          </property>
          <property name="font">
           <font>
-           <family>微软雅黑</family>
-           <pointsize>8</pointsize>
-           <weight>50</weight>
+           <family>PingFang TC</family>
+           <pointsize>11</pointsize>
            <bold>false</bold>
           </font>
          </property>
          <property name="text">
-          <string>暂停</string>
+          <string>暫停</string>
          </property>
         </widget>
        </item>
@@ -356,14 +354,13 @@
          </property>
          <property name="font">
           <font>
-           <family>微软雅黑</family>
-           <pointsize>8</pointsize>
-           <weight>50</weight>
+           <family>PingFang TC</family>
+           <pointsize>11</pointsize>
            <bold>false</bold>
           </font>
          </property>
          <property name="text">
-          <string>结束</string>
+          <string>結束</string>
          </property>
         </widget>
        </item>

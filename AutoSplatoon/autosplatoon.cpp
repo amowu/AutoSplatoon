@@ -97,14 +97,14 @@ void AutoSplatoon::recieveButtonAction(quint64 action, bool temporary)
 void AutoSplatoon::handleSerialStatus(uint8_t status)
 {
     if (status == CONNECTING) {
-        ui->serialStatusLabel->setText("连接中");
+        ui->serialStatusLabel->setText("連接中");
         ui->serialPortsBox->setEnabled(false);
         ui->serialRefreshButton->setEnabled(false);
         ui->uploadButton->setEnabled(false);
         //ui->forceVanillaConnection->setEnabled(false);
-        ui->serialConnectButton->setText("断开连接");
+        ui->serialConnectButton->setText("斷開連接");
     } else if (status == CONNECTED_OK) {
-        ui->serialStatusLabel->setText("已连接");
+        ui->serialStatusLabel->setText("已連接");
         ui->uploadButton->setEnabled(true);
         ui->flashButton->setEnabled(false);
         //connect(this, SIGNAL(), serialController, SLOT(recieveButtonAction(quint64, bool)));
@@ -113,18 +113,18 @@ void AutoSplatoon::handleSerialStatus(uint8_t status)
     } else if (status == CHOCO_SYNCED_JC_R) {
         ui->serialStatusLabel->setText("Connected as Right JoyCon!");
     } else if (status == CHOCO_SYNCED_PRO) {
-        ui->serialStatusLabel->setText("已连接");
+        ui->serialStatusLabel->setText("已連接");
         ui->uploadButton->setEnabled(true);
         ui->flashButton->setEnabled(false);
     } else if (status == CONNECTION_FAILED) {
-        ui->serialStatusLabel->setText("连接失败");
+        ui->serialStatusLabel->setText("連接失敗");
     } else {
-        ui->serialStatusLabel->setText("断连");
+        ui->serialStatusLabel->setText("斷連");
         ui->serialPortsBox->setEnabled(true);
         ui->serialRefreshButton->setEnabled(true);
         ui->uploadButton->setEnabled(false);
         ui->flashButton->setEnabled(true);
-        ui->serialConnectButton->setText("连接");
+        ui->serialConnectButton->setText("連接");
         ui->serialConnectButton->setEnabled(true);
         ui->startButton->setEnabled(false);
         ui->pauseButton->setEnabled(false);
@@ -168,12 +168,12 @@ void AutoSplatoon::on_flashButton_clicked()
     ui->serialPortsBox->setEnabled(false);
     ui->serialRefreshButton->setEnabled(false);
     ui->manualButton->setEnabled(false);
-    ui->serialStatusLabel->setText("烧录中");
+    ui->serialStatusLabel->setText("燒錄中");
 
     QElapsedTimer timer;
     timer.start();
     QString cmd = QApplication::applicationDirPath();
-    cmd += "/esptool.exe";
+    cmd += "/esptool.py";
     qDebug() << cmd;
     QStringList arg;
     arg << "--baud";arg << "230400";arg << "write_flash";arg << "0x0";arg << QApplication::applicationDirPath()+"/PRO-UART0.bin";
@@ -191,9 +191,9 @@ void AutoSplatoon::on_flashButton_clicked()
     qDebug() << output;
     int flag = output.indexOf("100 %");
     if(flag == -1)
-        ui->serialStatusLabel->setText("烧录失败");
+        ui->serialStatusLabel->setText("燒錄失敗");
     else
-        ui->serialStatusLabel->setText("烧录成功");
+        ui->serialStatusLabel->setText("燒錄成功");
     ui->serialConnectButton->setEnabled(true);
     ui->flashButton->setEnabled(true);
     ui->serialPortsBox->setEnabled(true);
@@ -257,8 +257,8 @@ void AutoSplatoon::on_startButton_clicked()
     ui->label->setEnabled(false);
 //    ui->label_2->setEnabled(false);
 //    ui->label_4->setEnabled(false);
-    ui->label_2->setText("当前行数");
-    ui->label_4->setText("当前列数");
+    ui->label_2->setText("當前行數");
+    ui->label_4->setText("當前列數");
     ui->intervalBox->setEnabled(false);
     ui->rowBox->setEnabled(false);
     ui->columnBox->setEnabled(false);
@@ -278,13 +278,13 @@ void AutoSplatoon::on_pauseButton_clicked()
 {
     if(!pauseFlag)
     {
-        ui->pauseButton->setText("继续");
+        ui->pauseButton->setText("繼續");
         pauseFlag = true;
     }
     else
     {
         pauseFlag = false;
-        ui->pauseButton->setText("暂停");
+        ui->pauseButton->setText("暫停");
     }
 }
 
@@ -300,7 +300,7 @@ void AutoSplatoon::on_haltButton_clicked()
     ui->intervalBox->setEnabled(false);
     ui->rowBox->setEnabled(false);
     ui->columnBox->setEnabled(false);
-    ui->pauseButton->setText("暂停");
+    ui->pauseButton->setText("暫停");
     //startFlag = false;
     pauseFlag = false;
     haltFlag = true;
