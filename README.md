@@ -10,6 +10,7 @@
 
 ![實機效果](image/Performance_on_Switch.jpg)
 
+<div style="text-align: center">（圖片來源：<a href="https://www.pixiv.net/artworks/101567519">pixiv ricco</a>）</div>
 
 ## 支持硬體
 
